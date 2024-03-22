@@ -1,16 +1,16 @@
 $background-color: #F2F2F2;
 $font-color: #352828;
 
-// @font-face {
-//   font-family: 'PPMori-Regular';
-//   src: url('/font/PPMori/PPMori-Regular.otf');
-// }
+@font-face {
+  font-family: 'PP Mori';
+  src: url('./font/PPMori/PPMori-Regular.otf') format('opentype');
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  //font-family: 'PPMori-Regular';
+  font-family: 'PP Mori';
 }
 
 body {
