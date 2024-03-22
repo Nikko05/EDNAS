@@ -272,6 +272,7 @@ a {
 
 .swiper-slide {
   height: 100%;
+  width: 320px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -297,6 +298,7 @@ a {
   position: absolute;
   bottom: 30px;
   height: 90%;
+  width: 100%;
   overflow: hidden;
 }
 
