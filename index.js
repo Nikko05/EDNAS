@@ -47,8 +47,8 @@ let player;
 // Function to initialize YouTube Player API
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
-    height: '360',
-    width: '640',
+    height: '100%',
+    width: '100%',
     videoId: 'HN-WH7C4K0Q', // Replace with your video ID
     events: {
       'onReady': onPlayerReady

@@ -1,6 +1,7 @@
 $background-color: #F2F2F2;
 $font-color: #352828;
 
+// import loacal font
 @font-face {
   font-family: 'PP Mori';
   src: url('./font/PPMori/PPMori-Regular.otf') format('opentype');
@@ -19,6 +20,8 @@ body {
   background-color: $background-color;
   color: $font-color;
 }
+
+// ---------------------------- header and navigation section ----------------------------
 
 .bg-of-header {
   position: fixed;
@@ -68,6 +71,7 @@ body {
   }
 }
 
+// ---------------------------- containers ----------------------------
 .container {
 
   &__logo {
@@ -236,10 +240,7 @@ hr {
   text-transform: uppercase;
 }
 
-.hamburger {
-  width: 32px;
-  height: 10px;
-}
+//  ---------------------------- slider1 with auto changing images ----------------------------
 
 .slider {
   display: flex;
@@ -269,11 +270,6 @@ a {
   }
 }
 
-.arrow-right {
-  height: 10px;
-  margin-left: 3px;
-}
-
 // ---------------------------- video ----------------------------
 
 .video {
@@ -287,7 +283,7 @@ a {
 
   img {
     padding: 0 10%;
-    z-index: 2;
+    z-index: 5;
     width: 100%;
   }
 }
@@ -302,19 +298,39 @@ a {
 
 .video-popup-content {
   position: absolute;
-  z-index: -1;
+  z-index: 4;
   width: 100%;
   height: 100%;
   padding: 0 10%;
 }
 
-// ---------------------------- swiper ----------------------------
+// ---------------------------- swiper with loop changing images ----------------------------
 .swiper-container {
   width: 100%;
   height: 450px;
   overflow: hidden;
   position: relative;
   padding: 0 0 50px;
+}
+
+.arrow-slider:hover {
+  cursor: pointer;
+  animation: hoverArrow .3s forwards;
+}
+
+@keyframes hoverArrow {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: .4;
+  }
+}
+
+.arrow-right {
+  height: 10px;
+  margin-left: 3px;
 }
 
 .swiper-wrapper {
@@ -328,7 +344,6 @@ a {
   flex-direction: column;
   text-align: center;
   background: $background-color;
-  /* Center slide image */
   display: flex;
   position: relative;
   text-transform: uppercase;
@@ -370,11 +385,12 @@ a {
   left: 0;
 }
 
-.prev-project:hover, .next-project:hover {
-  
-}
-
 // --------------------------- hamburger ---------------------------
+
+.hamburger {
+  width: 32px;
+  height: 10px;
+}
 
 .container__hamburger {
   width: 30px;
@@ -399,57 +415,3 @@ a {
 .container__hamburger span:nth-of-type(2)::after {
   top: 9px;
 }
-
-
-// #nav-icon3 {
-//   width: 30px;
-//   position: relative;
-//   transition: .5s ease-in-out;
-//   cursor: pointer;
-// }
-
-// #nav-icon3 span {
-//   display: block;
-//   position: absolute;
-//   height: 3px;
-//   width: 100%;
-//   background: $font-color;
-//   border-radius: 3px;
-//   opacity: 1;
-//   left: 0;
-//   transform: rotate(0deg);
-//   transition: .25s ease-in-out;
-// }
-
-// #nav-icon3 span:nth-child(1) {
-//   top: 0px;
-// }
-
-// #nav-icon3 span:nth-child(2),
-// #nav-icon3 span:nth-child(3) {
-//   top: 10px;
-// }
-
-// #nav-icon3 span:nth-child(4) {
-//   top: 20px;
-// }
-
-// #nav-icon3.open span:nth-child(1) {
-//   top: 18px;
-//   width: 0%;
-//   left: 50%;
-// }
-
-// #nav-icon3.open span:nth-child(2) {
-//   transform: rotate(45deg);
-// }
-
-// #nav-icon3.open span:nth-child(3) {
-//   transform: rotate(-45deg);
-// }
-
-// #nav-icon3.open span:nth-child(4) {
-//   top: 18px;
-//   width: 0%;
-//   left: 50%;
-// }
