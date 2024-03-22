@@ -30,7 +30,7 @@ body {
   height: 90px;
   width: 100vw;
   background-color: transparent;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(8px);
   z-index: 99;
 }
 
@@ -38,6 +38,7 @@ body {
   display: flex;
   justify-content: space-between;
   position: fixed;
+  background: transparent;
   width: calc(100% - 80px);
   z-index: 100;
 }
