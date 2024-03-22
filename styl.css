@@ -231,6 +231,7 @@ a {
   display: flex;
   justify-content: center;
   margin-bottom: 10px;
+  z-index: 6;
 }
 .video img {
   padding: 0 10%;
